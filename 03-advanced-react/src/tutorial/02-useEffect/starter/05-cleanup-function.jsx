@@ -1,5 +1,28 @@
+import { useEffect, useState } from "react";
+
 const CleanupFunction = () => {
-  return <h2>cleanup function</h2>;
+  const [isClicked, setIsClicked] = useState(false)
+
+  return (
+    <div>
+      <button onClick={() => setIsClicked(!isClicked)} className="btn">Toggle</button>
+      {isClicked && <Component />}
+    </div>
+  );
+
+
 };
+
+const Component = () => {
+  useEffect(() => {
+    const someFunc = () => {
+      // some logic      
+    }
+    window.addEventListener('scroll', someFunc);
+  }, [])
+  return (
+      <h2>Hi Fellas</h2>
+  )
+}
 
 export default CleanupFunction;

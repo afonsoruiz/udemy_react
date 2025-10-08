@@ -30,6 +30,6 @@ const UserChallenge = () => {
       )}
     </div>
   );
-};
+  };
 
-export default UserChallenge;
+  export default UserChallenge;
