@@ -276,7 +276,7 @@ ul {
   font-size: 1.25rem;
 }
 
-.lorem-form input {
+.lorem-form    {
   padding: 0.25rem 0.5rem;
   width: 4rem;
   border-radius: var(--borderRadius);

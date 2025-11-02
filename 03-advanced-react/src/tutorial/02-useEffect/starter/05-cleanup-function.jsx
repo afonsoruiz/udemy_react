@@ -19,6 +19,7 @@ const Component = () => {
       // some logic      
     }
     window.addEventListener('scroll', someFunc);
+    return () => window.removeEventListener('scroll', someFunc)
   }, [])
   return (
       <h2>Hi Fellas</h2>
